@@ -14,6 +14,19 @@
 .home .conf-name span{display:block;font-size:.42em;font-weight:400;letter-spacing:.14em;text-transform:uppercase;margin-top:.45rem;color:var(--dates)}
 .home .conf-theme{margin:1.4rem 0 0;padding-left:.9rem;border-left:4px solid var(--band);font:italic 400 clamp(1.1rem,2.6vw,1.45rem)/1.3 var(--sans);color:var(--dates);text-wrap:balance;max-width:40rem}
 .home .when-where{margin-top:1.3rem;color:var(--brand-ink)}
+/* Organizers band: each organizer with its parent society underneath */
+.content section.organizers{max-width:none}
+.organizers{margin:2.2rem 0}
+.organizers>h2{margin:0 0 .8rem;font:600 .78rem/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.org-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem;max-width:none!important}
+.org{display:flex;flex-direction:column;gap:.7rem;padding:1rem;border:1px solid var(--line);border-top:3px solid var(--accent);background:#fff}
+.org a{display:flex;align-items:center;justify-content:center;gap:.8rem;text-decoration:none}
+.org img{display:block;width:auto;max-width:100%;height:auto;min-width:0}
+.org .main img{max-height:96px}
+.org .parent{padding-top:.7rem;border-top:1px dashed #CFD5DD}
+.org .parent span{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#4f6474;white-space:nowrap}
+.org .parent img{max-height:52px}
+.org a:hover img{opacity:.75}
 </style>
 </head>
 <body>
@@ -39,7 +52,8 @@
   <p>The ITAlian COnference on Survey Methodology (ITACOSM) is a biennial international
 	conference organized by the Survey Sampling Group (S2G) of the Italian Statistical Society (SIS).
 	As at the 2025 meeting in Bologna, S2G and the International Association of Survey
-	Statisticians (IASS) join forces to organize ITACOSM-IASS 2027, which will be held at the Cremona 2027 meeting.</p>
+	Statisticians (IASS) join forces to organize ITACOSM-IASS 2027, which will be held at the Cremona
+	meeting.</p>
 
 <p>The main theme of this edition is <em>Data Abundance, Valid Inference: The Role of Surveys</em>.
 	The conference welcomes contributions on survey sampling, estimation, data integration,
@@ -50,6 +64,20 @@
 <p>More on S2G: <a href="https://s2gsis.github.io/">s2gsis.github.io</a><br>
 More on IASS: <a href="https://isi-iass.org/home/">isi-iass.org</a></p>
   <p>Further details on the call for papers, the programme and registration will be published on this site in the coming months.</p>
+</section>
+
+<section class="organizers" aria-labelledby="org-title">
+  <h2 id="org-title">Organized by</h2>
+  <div class="org-grid">
+    <div class="org">
+      <a class="main" href="https://s2gsis.github.io/"><img src="logo-s2g.png" width="803" height="240" alt="S2G – Survey Sampling Group of the Italian Statistical Society"></a>
+      <a class="parent" href="https://www.sis-statistica.it/"><span>Group of</span><img src="logo-sis.png" width="315" height="208" alt="SIS – Società Italiana di Statistica"></a>
+    </div>
+    <div class="org">
+      <a class="main" href="https://isi-iass.org/home/"><img src="logo-iass.png" width="275" height="240" alt="IASS – International Association of Survey Statisticians"></a>
+      <a class="parent" href="https://www.isi-web.org/"><span> an Association of</span><img src="logo-isi.png" width="571" height="240" alt="ISI – International Statistical Institute"></a>
+    </div>
+  </div>
 </section>
 
 <section class="facts" aria-label="Key information">
@@ -79,13 +107,15 @@ More on IASS: <a href="https://isi-iass.org/home/">isi-iass.org</a></p>
     <li><span class="name">Tomasz Żądło</span><span class="aff">University of Economics in Katowice</span></li>
   </ul>
   <h2>Organizing Committee</h2>
-  <li><span class="name">Luca Bagnato</span>, <span class="aff">Università Cattolica del Sacro Cuore</span></li>
-  <li><span class="name">Elena Calegari</span>, <span class="aff">Università Cattolica del Sacro Cuore</span></li>
-  <li><span class="name">Enrico Fabrizi</span>, <span class="role">Chair</span><span class="aff">Università Cattolica del Sacro Cuore</span></li>
-  <li><span class="name">Valentina Ottaviani</span>, <span class="aff">Università Cattolica del Sacro Cuore</span></li>
-  <li><span class="name">Sergio Venturini</span>, <span class="aff">Università Cattolica del Sacro Cuore</span></li>
+  <ul class="committee">
+    <li><span class="name">Luca Bagnato</span><span class="aff">Università Cattolica del Sacro Cuore</span></li>
+    <li><span class="name">Elena Calegari</span><span class="aff">Università Cattolica del Sacro Cuore</span></li>
+    <li><span class="name">Enrico Fabrizi</span><span class="role">Chair</span><span class="aff">Università Cattolica del Sacro Cuore</span></li>
+    <li><span class="name">Valentina Ottaviani</span><span class="aff">Università Cattolica del Sacro Cuore</span></li>
+    <li><span class="name">Sergio Venturini</span><span class="aff">Università Cattolica del Sacro Cuore</span></li>
+  </ul>
   <h2>Contacts</h2>
-  <p class="tba"> s2gsurveysamplinggroup@gmail.com </p>
+  <p><a href="mailto:s2gsurveysamplinggroup@gmail.com">s2gsurveysamplinggroup@gmail.com</a></p>
 </section>
 
 </main>
